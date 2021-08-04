@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "knex-migrate": "npx knex --knexfile knexfile.js migrate:latest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.9",
+    "nodemon": "^2.0.12",
+    "sqlite3": "^5.0.2"
+  }
+}
