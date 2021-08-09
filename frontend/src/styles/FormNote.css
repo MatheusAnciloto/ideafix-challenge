@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  height: 15rem;
+  justify-content: space-around;
+}
+
+input, textarea {
+  width: 20rem;
+  outline: none;
+
+  background-color: var(--gray-50);
+  border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+  padding: 1rem;
+}
+
+input {
+  height: 2rem;
+}
+
+textarea {
+  height: 10rem;
+  resize: none;
+}
+
+button {
+  width: 8rem;
+  padding: 0.25rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  
+  align-self: flex-end;
+  
+  color: #FFF;
+  background-color: var(--orange-900);
+}

@@ -1,0 +1,55 @@
+.notes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  
+  margin-top: 2rem;
+}
+
+.notes div {
+  width: 18rem;
+  height: 8rem;
+  background-color: var(--gray-50);
+  margin-bottom: 1rem;
+
+  border-radius: 10px;
+  position: relative;
+}
+
+.notes section {
+  padding: 1.5rem;
+}
+
+.notes section hr {
+  border-top: 1px dotted;
+}
+
+.notes h2 {
+  font-size: 1rem;
+  color: var(--green-300);
+
+  margin-bottom: 1rem;
+}
+
+.notes p {
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.notes button {
+  top: -0.5rem;
+  right: -0.2rem;
+  position: absolute;
+
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  line-height: 0.225rem;
+  font-size: 1.2rem;
+  background: var(--gray-600);
+}

@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = {
   client: 'sqlite3',
   connection: {
-    filename: './db/database.db3',
+    filename: path.resolve(__dirname, 'db', 'database.sqlite'),
   },
   migrations: {
-    directory: __dirname + '/db/migrations'
-  }
+    directory: path.resolve(__dirname, 'db', 'migrations')
+  },
+  useNullAsDefault: true
 };

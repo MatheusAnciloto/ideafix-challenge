@@ -1,0 +1,36 @@
+.container {
+  max-width: 90%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-top: 2rem;
+}
+
+.container h1 {
+  color: var(--purple-500);
+}
+
+.vertical-line {
+  border: 1px solid var(--orange-900);
+}
+
+.card-notes {
+  width: 60%;
+}
+
+
+@media (max-width: 868px) {
+  .container {
+    justify-content: center;
+    margin: 0 auto;
+    align-content: space-between;
+  }
+
+  .vertical-line {
+    margin: 2rem 2rem;
+    width: 70%;
+  }
+}

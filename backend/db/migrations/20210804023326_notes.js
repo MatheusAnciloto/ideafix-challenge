@@ -2,8 +2,8 @@
 exports.up = function(knex) {
   return knex.schema.createTable('notes', table => {
     table.string('id').primary();
-    table.string('title').useNullAsDefault();
-    table.string('description').useNullAsDefault();
+    table.string('title').notNullable();
+    table.string('description').notNullable();
   });
 };
 
